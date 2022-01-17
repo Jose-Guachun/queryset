@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Registro</h2>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <h2>Esta seguro de eliminar el registro {{descripcion}}</h2>
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+        <a href="{% url 'crud:index' %}" class="btn btn-danger">Cancelar</a>
+    </form>
+{% endblock %}
