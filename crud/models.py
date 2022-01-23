@@ -20,7 +20,6 @@ class Modelo(models.Model):
 
 
 class Producto(models.Model):
-
     marca = models.ForeignKey(Marca,on_delete=models.CASCADE)
     modelo = models.ForeignKey(Modelo, on_delete=models.CASCADE)
 
